@@ -1,0 +1,25 @@
+﻿@host=https://localhost:5001
+
+###
+GET {{host}}/api/pets
+
+###
+GET {{host}}/api/pets/10
+
+### 
+GET {{host}}/api/pets?pageNumber=1&pageSize=5
+
+
+## 
+POST {{host}}/api/pets
+Content-Type: application/json
+
+{
+  "owner": "이혜진",
+  "name": "Jolly",
+  "age": 15,
+  "type": "Dog",
+  "gender": 1
+}
+
+
